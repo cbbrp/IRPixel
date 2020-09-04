@@ -1,0 +1,51 @@
+Arguments: 
+  C:\FXServerV1test\FXServer.exe C:\FXServerV1test\resources\[system]\[builders]\yarn\yarn_cli.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: write EIO
+      at WriteStream.Socket._writeGeneric (net.js:768:25)
+      at WriteStream.Socket._write (net.js:787:8)
+      at doWrite (_stream_writable.js:396:12)
+      at writeOrBuffer (_stream_writable.js:382:5)
+      at WriteStream.Writable.write (_stream_writable.js:290:11)
+      at WriteStream.Socket.write (net.js:711:40)
+      at writeOnNthLine (C:\FXServerV1test\resources\[system]\[builders]\yarn\yarn_cli.js:48940:12)
+      at Spinner.render (C:\FXServerV1test\resources\[system]\[builders]\yarn\yarn_cli.js:96696:48)
+      at Spinner.start (C:\FXServerV1test\resources\[system]\[builders]\yarn\yarn_cli.js:96683:10)
+      at ConsoleReporter.activity (C:\FXServerV1test\resources\[system]\[builders]\yarn\yarn_cli.js:96229:13)
+
+npm manifest: 
+  {
+    "name": "webpack-builder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "async": "^2.6.1",
+      "webpack": "^4.12.0",
+      "worker-farm": "^1.6.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

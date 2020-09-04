@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Slider gsap | virsion: 02</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  #loading{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+    margin: 100px auto;
+    margin-top: -35px;
+    padding-top: 10px;
+    padding-left: 25px;
+    margin-top: -100px;
+  }
+
+  #loading2{
+    width: 410px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+    padding-top:8px;
+    margin-top: 15px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+
+  #carousel-example-generic {
+    height: 480px;
+    width: 848px;
+  }
+
+  .carouselTitle {
+    font-size: 64px;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 1px 2px #000;
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+  }
+
+  </style>
+
+
+
+</head>
+
+<body>
+<div class="container">
+  <div style="margin-top: 10%;" class="row">
+    <div class="col-lg-12">
+
+
+      <!DOCTYPE html>
+      <html>
+      <title>W3.CSS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+        .mySlides {display:none;}
+      </style>
+      <body>
+
+
+      <div id="loading2" style="float: left;">Az dokme <span class="coolshadow">SPACE</span> baraye mute estefade konid!</div>
+      <img src="https://irpixel.ir/images/unmute.png" id="toggle" width="60px" style="float: right;" alt="Didn't load">
+
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="https://irpixel.ir/images/1.png" style="width:100%">
+        <img class="mySlides" src="https://irpixel.ir/images/2.png" style="width:100%">
+        <img class="mySlides" src="https://irpixel.ir/images/3.png" style="width:100%">
+        <img class="mySlides" src="https://irpixel.ir/images/4.png" style="width:100%">
+        <img class="mySlides" src="https://irpixel.ir/images/5.png" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+        <div style="margin-top: 5%;" id="loading"> Loading IRPixel <img width="20px" src="https://irpixel.ir/images/loading.gif" style="float: right;margin-right: 15px;"> </div>
+
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "block";
+        }
+      </script>
+
+      </body>
+      </html>
+
+
+
+
+    </div>
+
+  </div>
+</div>
+  <!-- title -->
+  
+<!-- slider -->
+  <div class="container">
+    <div class="container">
+      <div style="padding-top: 10%;" class="row">
+        <div class="col-lg-12">
+
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
+    <script src="js/index.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

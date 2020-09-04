@@ -1,0 +1,141 @@
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Gudea', sans-serif;
+  font-weight: normal;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+body {
+  background-image: url(https://irpixel.ir/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+  color: #333
+}
+h1 a {
+  font-size: 14px;
+  color: #aaa;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: 1px solid #dcdcdc;
+  text-decoration: none
+}
+h1 a:hover {
+  color: #0fe0ba;
+  text-decoration: underline
+}
+.slider {
+  width: 1000px;
+  height: 100px;
+
+  padding: 0 50px;
+  margin: 100px auto;
+  width: 100%;
+  height: auto;
+}
+
+.slider ul, .slider ul li {
+  width: 100%;
+  height: 100%
+}
+.slider ul {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px
+}
+.slider ul li {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-size: cover; /* semon #f98686 */
+  background-position: center;
+  color: #fff;
+  font-family: serif;
+}
+.slider ul li:first-of-type {
+  background-image: url("https://irpixel.ir/images/1.png")
+}
+.slider ul li:nth-of-type(2) {
+  background-image: url("https://irpixel.ir/images/2.png")
+}
+.slider ul li:nth-of-type(3) {
+  background-image: url("https://irpixel.ir/images/3.png")
+}
+.slider ul li:nth-of-type(4) {
+  background-image: url("https://irpixel.ir/images/4.png")
+}
+.slider ul li:last-of-type {
+  background-image: url("https://irpixel.ir/images/5.png")
+}
+.slider .controll {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 55%;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #333;
+  cursor: pointer;
+  color: #333
+}
+.slider .controll:first-of-type {
+  transform: rotate(45deg);
+  left: 20px
+}
+.slider .controll:last-of-type {
+  transform: rotate(225deg);
+  right: 20px
+}
+.slider .controll:hover {
+  border-color: #f98686;
+}
+.slider ol {
+  text-align: center;
+  padding-top: 10px
+}
+.slider ol li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.slider ol .fa {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  font-weight: normall;
+}
+.slider ol li:hover .fa:before, .slider ol li.active .fa:before {
+  content: "\f111"
+}
+.coolshadow {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+/* .slider ul li.active {
+  z-index: 999;
+  left: 0
+} */
+@media(max-width: 490px) {
+  h1 {font-size: 45px}
+}
+@media(max-width: 350px) {
+  h1 {font-size: 25px}
+}
